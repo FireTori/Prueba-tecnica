@@ -275,7 +275,7 @@
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(2,1fr);
+
 }
 
 .card-container{
@@ -458,7 +458,6 @@
   grid-row-start: 2;
   grid-row-end: 3;
 }
-
 
 
 /* Animaciones */
