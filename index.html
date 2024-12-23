@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino Fortunato | Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- Evita que por las animaciones deje hacer scroll en X -->
+<body class="bg-black overflow-x-hidden">
+
+    <!-- Navbar, fijado en el tope tendrá trasparencia -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-nav fixed-top">
+        <div class="container d-flex flex-column gap-2 flex-md-row">
+
+                <a class="navbar-brand" href="#">Logotipo</a>
+                <div class="d-flex flex-row justify-content-center gap-5">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0 d-flex gap-md-5 small-text">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                            <span class="nav-line"></span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Casino</a>
+                            <span class="nav-line"></span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Deportes.html">Deportes</a>
+                            <span class="nav-line"></span>
+                        </li>
+                    </ul>
+                </div>
+
+            <div id="logout" class="d-flex align-items-center gap-2 flex-column flex-sm-row">
+                <a href="#"><img src="./img/svg/srch.svg" alt="search icon"></a>
+                <button type="button" id="login" class="btn btn-dark btn-outline-light rounded-pill text-nowrap px-4 py-2"><span
+                        class="small-text text-center">Iniciar
+                        Sesión</span></button>
+                <button type="button" id="signin" class="btn btn-danger rounded-pill px-4 py-2"><span
+                        class="small-text text-center">Registrarse</span></button>
+            </div>
+            <div id="Sesion" class="sesion flex-nowrap align-items-center gap-3">
+                <a href="#"><img src="./img/svg/srch.svg" alt="search icon"></a>
+                <div class="sesion-login rounded-pill bg-gradient-red p-1">
+                    <div class="d-flex flex-nowrap justify-content-center align-items-center gap-2 text-white">
+                        <span class="usr-bubble"><strong>TOTAL $0.00</strong></span>
+                        <span> | </span>
+                        <span>Hacer un depósito</span>
+                        <div class="user-container rounded-circle overflow-hidden"><img class="w-100" src="img/usr.jpg" alt="User"></div>
+                    </div>
+                </div>
+                <div class="nav-item text-white">
+                    <div class="dropdown">
+                        <button data-mdb-button-init
+                          data-mdb-ripple-init data-mdb-dropdown-init class="nav-link dropdown-toggle"
+                          type="button"
+                          aria-expanded="false">
+                          Perfil
+                        </button>
+                        <div class="stay-open position-absolute">
+                            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-start text-white p-3">
+                                <li><a class="dropdown-item" href="#">
+                                        <span class="d-flex justify-content-between">
+                                            <div class="d-flex">
+                                                <img src="img/svg/user.svg" alt="usuario">
+                                                Mi cuenta
+                                            </div>
+                                            <img src="img/svg/right.svg" alt="right">
+                                        </span>
+                                    </a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">
+                                        <span class="d-flex justify-content-between">
+                                            <div class="d-flex">
+                                                <img src="img/svg/settings.svg" alt="usuario">
+                                                Configuración
+                                            </div>
+                                            <img src="img/svg/right.svg" alt="right">
+                                        </span>
+                                    </a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">
+                                        <span class="d-flex justify-content-between">
+                                            <div class="d-flex">
+                                                <img src="img/svg/supp.svg" alt="usuario">
+                                                Soporte Online
+                                            </div>
+                                            <img src="img/svg/right.svg" alt="right">
+                                        </span>
+                                    </a>
+                                </li>
+                              <hr>
+                                <li><a class="dropdown-item" href="#">
+                                        <span class="d-flex justify-content-between">
+                                            <div class="d-flex">
+                                                <img src="img/svg/logout.svg" alt="usuario">
+                                                Cerrar Sesión
+                                            </div>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero -->
+    <section class="hero position-relative overflow-x-hidden">
+        <div class="hero-fade">
+            <div class="container">
+                    
+                <!-- información principal -->
+                <div class="info position-absolute bottom-0 w-45">
+                    <div class="d-flex flex-column gap-5 text-white">
+                        <h1 class="info-title">Fortunato Casino</h1>
+                        <p class="info-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, tempora eum esse, beatae ex deserunt tenetur amet
+                            voluptas ipsum, corrupti laborum temporibus iusto ducimus dignissimos. Tempore dignissimos sit nulla eius.</p>
+                        <div class="info-button">
+                            <button type="button" class="btn-gradient btn rounded-pill px-3 py-2">
+                                <span class="small-text text-center text-white d-flex">
+                                    Jugar Ahora
+                                    <img src="./img/svg/right.svg" alt="right">
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Carrusel 1 -->
+    <div class="container carrusel my-5 bg-black w-100 h-100">
+    
+        <div class="d-flex flex-column gap-5 p-3 ">
+            <div class="d-flex flex-row text-white justify-content-between">
+                <h2>Destacados</h2>
+                <div>
+                    <button id="buttonprev" type="button" class="btn btn-dark rounded-circle px-2"><img
+                            src="img/svg/left.svg" alt="left"></button>
+                    <button id="buttonnext" type="button" class="btn btn-dark rounded-circle px-2"><img
+                            src="img/svg/right.svg" alt="right"></button>
+                </div>
+            </div>
+    
+            <!-- Carrusel -->
+            <div id="carousel" class="carousel slide">
+                <div class="carousel-inner d-flex gap-4 p-4">
+    
+                    <!-- Item 1 -->
+    
+                    <div class="carousel-item active">
+                        <div class="position-relative image-container rounded-3">
+                            <img class="w-100" src="img/thumbnail0.png" alt="Fire">
+                            <div class="position-absolute top-5 right-5 bg-light-gray rounded-circle p-1 pt-0 shadow-sm">
+                                <img src="img/svg/info.svg" alt="info">
+                            </div>
+                            <div>
+                                <button type="button"
+                                    class="boton-img position-absolute bottom-5 right-5 btn-gradient btn rounded-pill px-3 py-2">
+                                    <span class="small-text text-center text-white d-flex">
+                                        Jugar Ahora
+                                        <img src="./img/svg/right.svg" alt="right">
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Item 2 -->
+    
+                    <div class="carousel-item">
+                        <div class="position-relative image-container rounded-3">
+                            <img class="w-100" src="img/thumbnail1.jpg" alt="bucanner">
+                            <div class="position-absolute top-5 right-5 bg-light-gray rounded-circle p-1 pt-0 shadow-sm">
+                                <img src="img/svg/info.svg" alt="info">
+                            </div>
+                            <div>
+                                <button type="button"
+                                    class="boton-img position-absolute bottom-5 right-5 btn-gradient btn rounded-pill px-3 py-2">
+                                    <span class="small-text text-center text-white d-flex">
+                                        Jugar Ahora
+                                        <img src="./img/svg/right.svg" alt="right">
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Item 3 -->
+    
+                    <div class="carousel-item">
+                        <div class="position-relative image-container rounded-3">
+                            <img class="w-100" src="img/thumbnail2.jpg" alt="azteca">
+                            <div class="position-absolute top-5 right-5 bg-light-gray rounded-circle p-1 pt-0 shadow-sm">
+                                <img src="img/svg/info.svg" alt="info">
+                            </div>
+                            <div>
+                                <button type="button"
+                                    class="boton-img position-absolute bottom-5 right-5 btn-gradient btn rounded-pill px-3 py-2">
+                                    <span class="small-text text-center text-white d-flex">
+                                        Jugar Ahora
+                                        <img src="./img/svg/right.svg" alt="right">
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Item 4 -->
+    
+                    <div class="carousel-item">
+                        <div class="position-relative image-container rounded-3">
+                            <img class="w-100" src="img/thumbnail4.jpg" alt="azteca">
+                            <div class="position-absolute top-5 right-5 bg-light-gray rounded-circle p-1 pt-0 shadow-sm">
+                                <img src="img/svg/info.svg" alt="info">
+                            </div>
+                            <div>
+                                <button type="button"
+                                    class="boton-img position-absolute bottom-5 right-5 btn-gradient btn rounded-pill px-3 py-2">
+                                    <span class="small-text text-center text-white d-flex">
+                                        Jugar Ahora
+                                        <img src="./img/svg/right.svg" alt="right">
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Carrusel 2-->
+    <div class="container carrusel my-5 bg-black w-100 h-100">
+    
+        <div class="d-flex flex-column gap-5 p-3 ">
+            <div class="d-flex flex-row text-white justify-content-between">
+                <h2>Nuevos Juegos</h2>
+                <div>
+                    <button id="buttonprev1" type="button" class="btn btn-dark rounded-circle px-2"><img
+                            src="img/svg/left.svg" alt="left"></button>
+                    <button id="buttonnext1" type="button" class="btn btn-dark rounded-circle px-2"><img
+                            src="img/svg/right.svg" alt="right"></button>
+                </div>
+            </div>
+    
+            <!-- Carrusel -->
+            <div id="carousel1" class="carousel slide">
+                <div class="carousel-inner d-flex gap-4 p-4">
+    
+                    <!-- Item 1 -->
+    
+                    <div class="carousel-item active">
+                        <div class="position-relative image-container rounded-3">
+                            <img class="w-100" src="img/thumbnail4.jpg" alt="macaque">
+                            <div class="position-absolute top-5 right-5 bg-light-gray rounded-circle p-1 pt-0 shadow-sm">
+                                <img src="img/svg/info.svg" alt="info">
+                            </div>
+                            <div>
+                                <button type="button"
+                                    class="boton-img position-absolute bottom-5 right-5 btn-gradient btn rounded-pill px-3 py-2">
+                                    <span class="small-text text-center text-white d-flex">
+                                        Jugar Ahora
+                                        <img src="./img/svg/right.svg" alt="right">
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Item 2 -->
+    
+                    <div class="carousel-item">
+                        <div class="position-relative image-container rounded-3">
+                            <img class="w-100" src="img/thumbnail5.jpg" alt="bucanner">
+                            <div class="position-absolute top-5 right-5 bg-light-gray rounded-circle p-1 pt-0 shadow-sm">
+                                <img src="img/svg/info.svg" alt="info">
+                            </div>
+                            <div>
+                                <button type="button"
+                                    class="boton-img position-absolute bottom-5 right-5 btn-gradient btn rounded-pill px-3 py-2">
+                                    <span class="small-text text-center text-white d-flex">
+                                        Jugar Ahora
+                                        <img src="./img/svg/right.svg" alt="right">
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Item 3 -->
+    
+                    <div class="carousel-item">
+                        <div class="position-relative image-container rounded-3">
+                            <img class="w-100" src="img/thumbnail6.jpg" alt="azteca">
+                            <div class="position-absolute top-5 right-5 bg-light-gray rounded-circle p-1 pt-0 shadow-sm">
+                                <img src="img/svg/info.svg" alt="info">
+                            </div>
+                            <div>
+                                <button type="button"
+                                    class="boton-img position-absolute bottom-5 right-5 btn-gradient btn rounded-pill px-3 py-2">
+                                    <span class="small-text text-center text-white d-flex">
+                                        Jugar Ahora
+                                        <img src="./img/svg/right.svg" alt="right">
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Item 4 -->
+    
+                    <div class="carousel-item">
+                        <div class="position-relative image-container rounded-3">
+                            <img class="w-100" src="img/thumbnail7.jpg" alt="azteca">
+                            <div class="position-absolute top-5 right-5 bg-light-gray rounded-circle p-1 pt-0 shadow-sm">
+                                <img src="img/svg/info.svg" alt="info">
+                            </div>
+                            <div>
+                                <button type="button"
+                                    class="boton-img position-absolute bottom-5 right-5 btn-gradient btn rounded-pill px-3 py-2">
+                                    <span class="small-text text-center text-white d-flex">
+                                        Jugar Ahora
+                                        <img src="./img/svg/right.svg" alt="right">
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Carrusel 3 -->
+    <div class="container carrusel my-5 bg-black w-100 h-100">
+    
+        <div class="d-flex flex-column gap-5 p-3 ">
+            <div class="d-flex flex-row text-white justify-content-between">
+                <h2>Clásicos</h2>
+                <div>
+                    <button id="buttonprev2" type="button" class="btn btn-dark rounded-circle px-2"><img
+                            src="img/svg/left.svg" alt="left"></button>
+                    <button id="buttonnext2" type="button" class="btn btn-dark rounded-circle px-2"><img
+                            src="img/svg/right.svg" alt="right"></button>
+                </div>
+            </div>
+    
+            <!-- Carrusel -->
+            <div id="carousel2" class="carousel slide">
+                <div class="carousel-inner d-flex gap-4 p-4">
+    
+                    <!-- Item 1 -->
+    
+                    <div class="carousel-item active">
+                        <div class="position-relative image-container rounded-3">
+                            <img class="w-100" src="img/thumbnail8.jpg" alt="Fire">
+                            <div class="position-absolute top-5 right-5 bg-light-gray rounded-circle p-1 pt-0 shadow-sm">
+                                <img src="img/svg/info.svg" alt="info">
+                            </div>
+                            <div>
+                                <button type="button"
+                                    class="boton-img position-absolute bottom-5 right-5 btn-gradient btn rounded-pill px-3 py-2">
+                                    <span class="small-text text-center text-white d-flex">
+                                        Jugar Ahora
+                                        <img src="./img/svg/right.svg" alt="right">
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Item 2 -->
+    
+                    <div class="carousel-item">
+                        <div class="position-relative image-container rounded-3">
+                            <img class="w-100" src="img/thumbnail9.jpg" alt="bucanner">
+                            <div class="position-absolute top-5 right-5 bg-light-gray rounded-circle p-1 pt-0 shadow-sm">
+                                <img src="img/svg/info.svg" alt="info">
+                            </div>
+                            <div>
+                                <button type="button"
+                                    class="boton-img position-absolute bottom-5 right-5 btn-gradient btn rounded-pill px-3 py-2">
+                                    <span class="small-text text-center text-white d-flex">
+                                        Jugar Ahora
+                                        <img src="./img/svg/right.svg" alt="right">
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Item 3 -->
+    
+                    <div class="carousel-item">
+                        <div class="position-relative image-container rounded-3">
+                            <img class="w-100" src="img/thumbnail10.jpg" alt="azteca">
+                            <div class="position-absolute top-5 right-5 bg-light-gray rounded-circle p-1 pt-0 shadow-sm">
+                                <img src="img/svg/info.svg" alt="info">
+                            </div>
+                            <div>
+                                <button type="button"
+                                    class="boton-img position-absolute bottom-5 right-5 btn-gradient btn rounded-pill px-3 py-2">
+                                    <span class="small-text text-center text-white d-flex">
+                                        Jugar Ahora
+                                        <img src="./img/svg/right.svg" alt="right">
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Item 4 -->
+    
+                    <div class="carousel-item">
+                        <div class="position-relative image-container rounded-3">
+                            <img class="w-100" src="img/thumbnail7.jpg" alt="azteca">
+                            <div class="position-absolute top-5 right-5 bg-light-gray rounded-circle p-1 pt-0 shadow-sm">
+                                <img src="img/svg/info.svg" alt="info">
+                            </div>
+                            <div>
+                                <button type="button"
+                                    class="boton-img position-absolute bottom-5 right-5 btn-gradient btn rounded-pill px-3 py-2">
+                                    <span class="small-text text-center text-white d-flex">
+                                        Jugar Ahora
+                                        <img src="./img/svg/right.svg" alt="right">
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container claim">
+        <div class="bg-dark rounded-3 p-5 h-25 position-relative">
+            <div class="d-flex justify-content-start">
+                <div class="d-flex flex-column gap-5">
+                    <div class="flex-column text-white">
+                        <h2>Pulsa para Reclamar<br>todas tus <br>Recompensas</h2>
+                    </div>
+                    <div>
+                        <button type="button" class="btn-zoom btn-gradient btn rounded-pill px-3 py-2">
+                            <span class="small-text text-center text-white">Obtener Recompensas</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="position-absolute bloque"><img src="img/adorno.png" alt="adorno"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Carrusel 4 -->
+    <div class="container carrusel my-5 bg-black w-100 h-100">
+    
+        <div class="d-flex flex-column gap-5 p-3 ">
+            <div class="d-flex flex-row text-white justify-content-between">
+                <h2>Clásicos</h2>
+                <div>
+                    <button id="buttonprev3" type="button" class="btn btn-dark rounded-circle px-2"><img
+                            src="img/svg/left.svg" alt="left"></button>
+                    <button id="buttonnext3" type="button" class="btn btn-dark rounded-circle px-2"><img
+                            src="img/svg/right.svg" alt="right"></button>
+                </div>
+            </div>
+    
+            <!-- Carrusel -->
+            <div id="carousel3" class="carousel slide">
+                <div class="carousel-inner d-flex gap-4 p-4">
+    
+                    <!-- Item 1 -->
+    
+                    <div class="carousel-item active">
+                        <div class="position-relative image-container rounded-3">
+                            <img class="w-100" src="img/thumbnail8.jpg" alt="Fire">
+                            <div class="position-absolute top-5 right-5 bg-light-gray rounded-circle p-1 pt-0 shadow-sm">
+                                <img src="img/svg/info.svg" alt="info">
+                            </div>
+                            <div>
+                                <button type="button"
+                                    class="boton-img position-absolute bottom-5 right-5 btn-gradient btn rounded-pill px-3 py-2">
+                                    <span class="small-text text-center text-white d-flex">
+                                        Jugar Ahora
+                                        <img src="./img/svg/right.svg" alt="right">
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Item 2 -->
+    
+                    <div class="carousel-item">
+                        <div class="position-relative image-container rounded-3">
+                            <img class="w-100" src="img/thumbnail9.jpg" alt="bucanner">
+                            <div class="position-absolute top-5 right-5 bg-light-gray rounded-circle p-1 pt-0 shadow-sm">
+                                <img src="img/svg/info.svg" alt="info">
+                            </div>
+                            <div>
+                                <button type="button"
+                                    class="boton-img position-absolute bottom-5 right-5 btn-gradient btn rounded-pill px-3 py-2">
+                                    <span class="small-text text-center text-white d-flex">
+                                        Jugar Ahora
+                                        <img src="./img/svg/right.svg" alt="right">
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Item 3 -->
+    
+                    <div class="carousel-item">
+                        <div class="position-relative image-container rounded-3">
+                            <img class="w-100" src="img/thumbnail10.jpg" alt="azteca">
+                            <div class="position-absolute top-5 right-5 bg-light-gray rounded-circle p-1 pt-0 shadow-sm">
+                                <img src="img/svg/info.svg" alt="info">
+                            </div>
+                            <div>
+                                <button type="button"
+                                    class="boton-img position-absolute bottom-5 right-5 btn-gradient btn rounded-pill px-3 py-2">
+                                    <span class="small-text text-center text-white d-flex">
+                                        Jugar Ahora
+                                        <img src="./img/svg/right.svg" alt="right">
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Item 4 -->
+    
+                    <div class="carousel-item">
+                        <div class="position-relative image-container rounded-3">
+                            <img class="w-100" src="img/thumbnail7.jpg" alt="azteca">
+                            <div class="position-absolute top-5 right-5 bg-light-gray rounded-circle p-1 pt-0 shadow-sm">
+                                <img src="img/svg/info.svg" alt="info">
+                            </div>
+                            <div>
+                                <button type="button"
+                                    class="boton-img position-absolute bottom-5 right-5 btn-gradient btn rounded-pill px-3 py-2">
+                                    <span class="small-text text-center text-white d-flex">
+                                        Jugar Ahora
+                                        <img src="./img/svg/right.svg" alt="right">
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Item 5 -->
+    
+                    <div class="carousel-item active">
+                        <div class="position-relative image-container rounded-3">
+                            <img class="w-100" src="img/thumbnail0.png" alt="Fire">
+                            <div class="position-absolute top-5 right-5 bg-light-gray rounded-circle p-1 pt-0 shadow-sm">
+                                <img src="img/svg/info.svg" alt="info">
+                            </div>
+                            <div>
+                                <button type="button"
+                                    class="boton-img position-absolute bottom-5 right-5 btn-gradient btn rounded-pill px-3 py-2">
+                                    <span class="small-text text-center text-white d-flex">
+                                        Jugar Ahora
+                                        <img src="./img/svg/right.svg" alt="right">
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Item 6 -->
+    
+                    <div class="carousel-item">
+                        <div class="position-relative image-container rounded-3">
+                            <img class="w-100" src="img/thumbnail1.jpg" alt="bucanner">
+                            <div class="position-absolute top-5 right-5 bg-light-gray rounded-circle p-1 pt-0 shadow-sm">
+                                <img src="img/svg/info.svg" alt="info">
+                            </div>
+                            <div>
+                                <button type="button"
+                                    class="boton-img position-absolute bottom-5 right-5 btn-gradient btn rounded-pill px-3 py-2">
+                                    <span class="small-text text-center text-white d-flex">
+                                        Jugar Ahora
+                                        <img src="./img/svg/right.svg" alt="right">
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Item 7 -->
+    
+                    <div class="carousel-item">
+                        <div class="position-relative image-container rounded-3">
+                            <img class="w-100" src="img/thumbnail2.jpg" alt="azteca">
+                            <div class="position-absolute top-5 right-5 bg-light-gray rounded-circle p-1 pt-0 shadow-sm">
+                                <img src="img/svg/info.svg" alt="info">
+                            </div>
+                            <div>
+                                <button type="button"
+                                    class="boton-img position-absolute bottom-5 right-5 btn-gradient btn rounded-pill px-3 py-2">
+                                    <span class="small-text text-center text-white d-flex">
+                                        Jugar Ahora
+                                        <img src="./img/svg/right.svg" alt="right">
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Item 8 -->
+    
+                    <div class="carousel-item">
+                        <div class="position-relative image-container rounded-3">
+                            <img class="w-100" src="img/thumbnail4.jpg" alt="azteca">
+                            <div class="position-absolute top-5 right-5 bg-light-gray rounded-circle p-1 pt-0 shadow-sm">
+                                <img src="img/svg/info.svg" alt="info">
+                            </div>
+                            <div>
+                                <button type="button"
+                                    class="boton-img position-absolute bottom-5 right-5 btn-gradient btn rounded-pill px-3 py-2">
+                                    <span class="small-text text-center text-white d-flex">
+                                        Jugar Ahora
+                                        <img src="./img/svg/right.svg" alt="right">
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="contenedor" class="contenedor  mb-5">
+        <div class="d-flex flex-column align-items-center text-white gap-4">
+            <div class="d-flex flex-column gap-2">
+                <h2 class="text-center big-text">!Únete ahora y gana!</h2>
+                <p class="text-center">Multiplicamos tu primer depósito x2</p>
+            </div>
+            <div class="d-flex align-items-center gap-2 flex-column flex-sm-row mb-5">
+                <button type="button" class="btn btn-black btn-outline-light rounded-pill text-nowrap px-4 py-2"><span
+                        class="small-text text-center">Iniciar
+                        Sesión</span></button>
+                <button type="button" class="btn btn-danger rounded-pill px-4 py-2"><span
+                        class="small-text text-center">Registrarse</span></button>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="container text-white">
+        <div class="d-flex flex-column gap-5 mb-3">
+            <div class="d-flex justify-content-between">
+                <div>
+                    <h6>Logo</h6>
+                </div>
+                <div class="d-flex gap-3 justify-content-end">
+                    <img src="img/svg/disc1.svg" alt="">
+                    <img src="img/svg/disc2.svg" alt="saberjugar">
+                </div>
+            </div>
+    
+            <div class="d-flex gap-5">
+                <div class="d-flex flex-column">
+                    <p class="smallest-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia unde dicta quam quidem recusandae officia illum dolor aliquid iste magni, autem illo quod voluptates ex distinctio perferendis odit <strong><br>amet consectetur adipisicing elit. Hic, odit odio.</strong></p>
+                    <p>Síguenos en redes Sociales</p>
+                    <div class="d-flex gap-2">
+                        <div class="rounded-circle bg-gradient-red justify-content-center align-items-center p-2"><img class="" src="img/svg/ig.svg" alt=""></div>
+                        <div class="rounded-circle bg-gradient-red justify-content-center align-items-center p-2"><img src="img/svg/twitterx.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="d-flex gap-5">
+                    <div class="d-flex flex-column gap-1">
+                        <h6 class="mb-4">Juegos</h6>
+                        <a class="footer-link text-nowrap" href="#">Destacados</a>
+                        <a class="footer-link text-nowrap" href="#">Nuevos Juegos</a>
+                        <a class="footer-link text-nowrap" href="#">Clásicos</a>
+                        <a class="footer-link text-nowrap" href="#">Todos los Juegos</a>
+                        <a class="footer-link text-nowrap" href="#">Deportes</a>
+                    </div>
+                    <div class="d-flex flex-column gap-1">
+                        <h6 class="mb-4" >Legales</h6>
+                        <a class="footer-link text-nowrap" href="#">Acerca de nosotros</a>
+                        <a class="footer-link text-nowrap" href="#">Términos y condiciones</a>
+                        <a class="footer-link text-nowrap" href="#">Política de privacidad</a>
+                        <a class="footer-link text-nowrap" href="#">Juego Responsable</a>
+                    </div>
+                    <div class="d-flex flex-column gap-1">
+                        <h6 class="mb-4">Ayuda</h6>
+                        <a class="footer-link text-nowrap" href="#">Chat de Soporte Online</a>
+                        <a class="footer-link text-nowrap" href="#">Preguntas frecuentes</a>
+                        <a class="footer-link text-nowrap" href="#">Reembolsos</a>
+                        <a class="footer-link text-nowrap" href="#">Contacto</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex gap-5 justify-content-between">
+                <p class="small-text text-gray text-nowrap">Casino Fortunato © Todos los derechos reservados, 2024</p>
+                <div class="d-flex justify-content-end gap-1">
+                    <div class="cash-container"><img class="rounded-1 w-100" src="img/paypal.jpg" alt="paypal"></div>
+                    <div class="cash-container"><img class="rounded-1 w-100" src="img/maestro.jpg" alt="maestro"></div>
+                    <div class="cash-container"><img class="rounded-1 w-100" src="img/Discover.jpg" alt="Discover"></div>
+                    <div class="cash-container"><img class="rounded-1 w-100" src="img/Visa.jpg" alt="Visa"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

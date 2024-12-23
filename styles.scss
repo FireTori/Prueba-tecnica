@@ -1,0 +1,113 @@
+/* Línea roja debajo de los items del nav */
+.nav-line {
+    display: block;
+    width: 0;
+    height: 2px; 
+    background-color: red; 
+    transition: width 0.3s ease-in-out; 
+}
+
+.nav-item:hover .nav-line {
+    width: 100%; 
+}
+
+/* para un texto mas pequeño */
+.small-text{
+    font-size: 13px;
+}
+
+.bg-nav{
+    background-color: rgb(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+}
+
+.hero{
+    background-image: url('./img/hero.jpg');
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.hero-fade{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)80%);
+}
+
+/* contenido */
+
+.w-45{
+    width: 45%;
+}
+
+/* background lightgray */
+
+.bg-light-gray{
+    background-color: rgba(153, 153, 153, 0.603)
+}
+
+/* boton con gradiente */
+.btn-gradient {
+    background: linear-gradient(to bottom right, #fa307d, #e90a0a);
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(to bottom right, #e90a0a, #fa307d);
+}
+
+/* contenedor de imagenes */
+
+.image-container{
+    width: 300px;
+    overflow: hidden;
+    flex: 0 0 auto;
+    transition: all 200ms ease-out;
+}
+
+.image-container img{
+    object-fit: cover;
+}
+
+.image-container .boton-img{
+    opacity: 0;
+    transition: all 200ms ease-out;
+}
+/* zoom */
+.image-container:hover{
+    transform: scale(1.1);
+    transition: all 200ms ease-in;
+
+}
+
+.image-container:hover .boton-img{
+    opacity: 1;
+    transition: all 200ms ease-in;
+}
+
+
+/* posicionamiento del boton en imagen */
+
+.right-5{
+    right: 5px;
+}
+.bottom-5{
+    bottom: 5px;
+}
+
+/* posicionar informacion en la imagen */
+
+.top-5{
+    top: 5px;
+}
+
+/* estilizar bloque */
+
+
+
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss"

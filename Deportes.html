@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino Fortunato | Deportes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-black overflow-x-hidden">
+    <!-- Navbar, fijado en el tope tendrá trasparencia -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-nav fixed-top">
+        <div class="container d-flex flex-column gap-2 flex-md-row">
+
+            <a class="navbar-brand" href="#">Logotipo</a>
+            <div class="d-flex flex-row justify-content-center gap-5">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0 d-flex gap-md-5 small-text">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                        <span class="nav-line"></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Casino</a>
+                        <span class="nav-line"></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Deportes.html">Deportes</a>
+                        <span class="nav-line"></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="logout" class="d-flex align-items-center gap-2 flex-column flex-sm-row">
+                <a href="#"><img src="./img/svg/srch.svg" alt="search icon"></a>
+                <button type="button" id="login"
+                    class="btn btn-dark btn-outline-light rounded-pill text-nowrap px-4 py-2"><span
+                        class="small-text text-center">Iniciar
+                        Sesión</span></button>
+                <button type="button" id="signin" class="btn btn-danger rounded-pill px-4 py-2"><span
+                        class="small-text text-center">Registrarse</span></button>
+            </div>
+            <div id="Sesion" class="sesion flex-nowrap align-items-center gap-3">
+                <a href="#"><img src="./img/svg/srch.svg" alt="search icon"></a>
+                <div class="sesion-login rounded-pill bg-gradient-red p-1">
+                    <div class="d-flex flex-nowrap justify-content-center align-items-center gap-2 text-white">
+                        <span class="usr-bubble"><strong>TOTAL $0.00</strong></span>
+                        <span> | </span>
+                        <span>Hacer un depósito</span>
+                        <div class="user-container rounded-circle overflow-hidden"><img class="w-100" src="img/usr.jpg"
+                                alt="User"></div>
+                    </div>
+                </div>
+                <div class="nav-item text-white">
+                    <div class="dropdown">
+                        <button data-mdb-button-init data-mdb-ripple-init data-mdb-dropdown-init
+                            class="nav-link dropdown-toggle" type="button" aria-expanded="false">
+                            Perfil
+                        </button>
+                        <div class="stay-open position-absolute">
+                            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-start text-white p-3">
+                                <li><a class="dropdown-item" href="#">
+                                        <span class="d-flex justify-content-between">
+                                            <div class="d-flex">
+                                                <img src="img/svg/user.svg" alt="usuario">
+                                                Mi cuenta
+                                            </div>
+                                            <img src="img/svg/right.svg" alt="right">
+                                        </span>
+                                    </a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">
+                                        <span class="d-flex justify-content-between">
+                                            <div class="d-flex">
+                                                <img src="img/svg/settings.svg" alt="usuario">
+                                                Configuración
+                                            </div>
+                                            <img src="img/svg/right.svg" alt="right">
+                                        </span>
+                                    </a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">
+                                        <span class="d-flex justify-content-between">
+                                            <div class="d-flex">
+                                                <img src="img/svg/supp.svg" alt="usuario">
+                                                Soporte Online
+                                            </div>
+                                            <img src="img/svg/right.svg" alt="right">
+                                        </span>
+                                    </a>
+                                </li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">
+                                        <span class="d-flex justify-content-between">
+                                            <div class="d-flex">
+                                                <img src="img/svg/logout.svg" alt="usuario">
+                                                Cerrar Sesión
+                                            </div>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="margen"></div>
+
+    <div class="mx-5 text-white">
+        <aside id="sidebar" class="sidebar float-left rounded-4">
+            <div class="pt-3 px-4 pb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2 class="sidebar-text">Deportes</h2>
+                    <img src="./img/svg/down.svg" alt="down">
+                </div>
+            </div>
+            <div class="sidebar-list">
+                <ul class="sidebar-dropdown px-3">
+                    <li class="sidebar-item">
+                        <button class="no-stylebtn d-flex justify-content-between">
+                            <span class="sidebar-text">Futbol</span>
+                            <img class="element-state" src="img/svg/up.svg" alt="up">
+                        </button>
+                        <div class="sidebar-paises">
+                            <ul class="list-unstyled ps-3">
+                                <li class="py-2 sidebar-item-pais">
+                                    <button class="no-stylebtn d-flex justify-content-between">
+                                        <span class="sidebar-text">Alemania</span>
+                                        <img class="element-state-paises" src="img/svg/up.svg" alt="up">
+                                    </button>
+                                    <div class="sidebar-ligas">
+                                        <ul class="list-unstyled ps-3">
+                                            <li class="py-2"><a class="small-text text-decoration-none text-white"
+                                                    href="#">Bundesliga</a></li>
+                                            <li class="py-2"><a class="small-text text-decoration-none text-white"
+                                                    href="#">Liga 1</a></li>
+                                            <li class="py-2"><a class="small-text text-decoration-none text-white"
+                                                    href="#">Liga 2</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="py-2 sidebar-item-pais">
+                                    <button class="no-stylebtn d-flex justify-content-between">
+                                        <span class="sidebar-text">Argentina</span>
+                                        <img class="element-state-paises" src="img/svg/up.svg" alt="up">
+                                    </button>
+                                    <div class="sidebar-ligas">
+                                        <ul class="list-unstyled ps-3">
+                                            <li class="py-2"><a class="small-text text-decoration-none text-white"
+                                                    href="#">Primera Division</a></li>
+                                            <li class="py-2"><a class="small-text text-decoration-none text-white"
+                                                    href="#">Primera Nacional</a></li>
+                                            <li class="py-2"><a class="small-text text-decoration-none text-white"
+                                                    href="#">Primera B</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="py-2 sidebar-item-pais">
+                                    <button class="no-stylebtn d-flex justify-content-between">
+                                        <span class="sidebar-text">Inglaterra</span>
+                                        <img class="element-state-paises" src="img/svg/up.svg" alt="up">
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="sidebar-item">
+                        <button class="no-stylebtn d-flex justify-content-between">
+                            <span class="sidebar-text">Baloncesto</span>
+                            <img class="element-state" src="img/svg/up.svg" alt="up">
+                        </button>
+                    </li>
+                    <li class="sidebar-item">
+                        <button class="no-stylebtn d-flex justify-content-between">
+                            <span class="sidebar-text">Béisbol</span>
+                            <img class="element-state" src="img/svg/up.svg" alt="up">
+                        </button>
+                    </li>
+                    <li class="sidebar-item">
+                        <button class="no-stylebtn d-flex justify-content-between">
+                            <span class="sidebar-text">Hockey sobre hielo</span>
+                            <img class="element-state" src="img/svg/up.svg" alt="up">
+                        </button>
+                    </li>
+                    <li class="sidebar-item">
+                        <button class="no-stylebtn d-flex justify-content-between">
+                            <span class="sidebar-text">Futbol Americano</span>
+                            <img class="element-state" src="img/svg/up.svg" alt="up">
+                        </button>
+                    </li>
+                    <li class="sidebar-item">
+                        <button class="no-stylebtn d-flex justify-content-between">
+                            <span class="sidebar-text">Tenis</span>
+                            <img class="element-state" src="img/svg/up.svg" alt="up">
+                        </button>
+                    </li>
+                    <li class="sidebar-item">
+                        <button class="no-stylebtn d-flex justify-content-between">
+                            <span class="sidebar-text">Tenis de mesa</span>
+                            <img class="element-state" src="img/svg/up.svg" alt="up">
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    
+    <div class="panel-superior px-5">
+        <div class="card-container d-flex flex-nowrap overflow-x-auto overflow-y-hidden gap-3">
+           <!-- Tarjeta 1 -->
+            <div class="cards rounded-4">
+                    <div class="tag d-flex flex-column align-items-center gap-3">
+                        <div class="tag-container"><img src="./img/svg/football.svg" alt="Svg Futbol"></div>
+                        <h3 class="small-text text-white">Fútbol</h3>
+                    </div>
+                    <div class="d-flex gap-5 px-4 justify-content-between align-items-center">
+                        <div class="d-flex flex-column gap-3 text-white">
+                            <h3 class="small-text text-nowrap">México > LigaMX</h3>
+                            <h3 class="small-text text-nowrap">Pachuca</h3>
+                            <h3 class="small-text text-nowrap">Pumas UNAM</h3>
+                        </div>
+                        <div class="d-flex flex-column align-items-end gap-3 text-white">
+                            <div class="svg-container"><img src="./img/svg/fav.svg" alt="Favorite"></div>
+                            <span class="badge text-bg-success">En vivo</span>
+                            <div class="d-flex">
+                                <img src="./img/svg/live.svg" alt="live">
+                                <span class="text-success text-nowrap">45' 1parte</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="apuesta d-flex justify-content-center gap-3 py-3">
+                        <button class="btn btn-dark btn-outline-light d-flex flex-column align-items-center">
+                            <img class="apuesta-svg" src="./img/svg/lock.svg" alt="apuesta">
+                            <span>Pachuca</span>
+                        </button>
+                        <button class="btn btn-dark btn-outline-light d-flex flex-column align-items-center">
+                            <img class="apuesta-svg" src="./img/svg/lock.svg" alt="apuesta">
+                            <span>Empate</span>
+                        </button>
+                        <button class="btn btn-dark btn-outline-light d-flex flex-column align-items-center">
+                            <img class="apuesta-svg" src="./img/svg/lock.svg" alt="apuesta">
+                            <span>Pumas UNAM</span>
+                        </button>
+                    </div>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="cards rounded-4">
+                <div class="tag d-flex flex-column align-items-center gap-3">
+                    <div class="tag-container"><img src="./img/svg/football.svg" alt="Svg Futbol"></div>
+                    <h3 class="small-text text-white">Fútbol</h3>
+                </div>
+                <div class="d-flex gap-5 px-4 justify-content-between align-items-center">
+                    <div class="d-flex flex-column gap-3 text-white">
+                        <h3 class="small-text text-nowrap">México > LigaMX</h3>
+                        <h3 class="small-text text-nowrap">Pachuca</h3>
+                        <h3 class="small-text text-nowrap">Pumas UNAM</h3>
+                    </div>
+                    <div class="d-flex flex-column align-items-end gap-3 text-white">
+                        <div class="svg-container"><img src="./img/svg/fav.svg" alt="Favorite"></div>
+                        <span class="badge text-bg-success">En vivo</span>
+                        <div class="d-flex">
+                            <img src="./img/svg/live.svg" alt="live">
+                            <span class="text-success text-nowrap">45' 1parte</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="apuesta d-flex justify-content-center gap-3 py-3">
+                    <button class="btn btn-dark btn-outline-light d-flex flex-column align-items-center">
+                        <img class="apuesta-svg" src="./img/svg/lock.svg" alt="apuesta">
+                        <span>Pachuca</span>
+                    </button>
+                    <button class="btn btn-dark btn-outline-light d-flex flex-column align-items-center">
+                        <img class="apuesta-svg" src="./img/svg/lock.svg" alt="apuesta">
+                        <span>Empate</span>
+                    </button>
+                    <button class="btn btn-dark btn-outline-light d-flex flex-column align-items-center">
+                        <img class="apuesta-svg" src="./img/svg/lock.svg" alt="apuesta">
+                        <span>Pumas UNAM</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="cards rounded-4">
+                <div class="tag d-flex flex-column align-items-center gap-3">
+                    <div class="tag-container"><img src="./img/svg/football.svg" alt="Svg Futbol"></div>
+                    <h3 class="small-text text-white">Fútbol</h3>
+                </div>
+                <div class="d-flex gap-5 px-4 justify-content-between align-items-center">
+                    <div class="d-flex flex-column gap-3 text-white">
+                        <h3 class="small-text text-nowrap">México > LigaMX</h3>
+                        <h3 class="small-text text-nowrap">Pachuca</h3>
+                        <h3 class="small-text text-nowrap">Pumas UNAM</h3>
+                    </div>
+                    <div class="d-flex flex-column align-items-end gap-3 text-white">
+                        <div class="svg-container"><img src="./img/svg/fav.svg" alt="Favorite"></div>
+                        <span class="badge text-bg-success">En vivo</span>
+                        <div class="d-flex">
+                            <img src="./img/svg/live.svg" alt="live">
+                            <span class="text-success text-nowrap">45' 1parte</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="apuesta d-flex justify-content-center gap-3 py-3">
+                    <button class="btn btn-dark btn-outline-light d-flex flex-column align-items-center">
+                        <img class="apuesta-svg" src="./img/svg/lock.svg" alt="apuesta">
+                        <span>Pachuca</span>
+                    </button>
+                    <button class="btn btn-dark btn-outline-light d-flex flex-column align-items-center">
+                        <img class="apuesta-svg" src="./img/svg/lock.svg" alt="apuesta">
+                        <span>Empate</span>
+                    </button>
+                    <button class="btn btn-dark btn-outline-light d-flex flex-column align-items-center">
+                        <img class="apuesta-svg" src="./img/svg/lock.svg" alt="apuesta">
+                        <span>Pumas UNAM</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="list-selector">
+            <div class="list-selector-container rounded-4 d-flex gap-4 overflow-x-auto overflow-y-hidden">
+                <!-- all -->
+                <div class="list-item p-3">
+                    <div class="d-flex gap-2">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="img-container">
+                                <img src="./img/svg/all.svg" alt="all">
+                            </div>
+                            <a class="text-decoration-none" href="#"><span class="text-white">Todos</span></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- futbol -->
+                <div class="list-item p-3">
+                    <div class="d-flex gap-2">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="img-container">
+                                <img src="./img/svg/football.svg" alt="all">
+                            </div>
+                            <a class=" text-decoration-none" href="#"><span class="text-white">Fútbol</span></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Basket -->
+                <div class="list-item p-3">
+                    <div class="d-flex gap-2">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="img-container">
+                                <img src="./img/svg/basketball.svg" alt="basket">
+                            </div>
+                            <a class=" text-decoration-none" href="#"><span class="text-white">Baloncesto</span></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- beisbol -->
+                <div class="list-item p-3">
+                    <div class="d-flex gap-2">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="img-container">
+                                <img src="./img/svg/baseball.svg" alt="beisbol">
+                            </div>
+                            <a class=" text-decoration-none" href="#"><span class="text-white">Béisbol</span></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hockey -->
+                <div class="list-item p-3">
+                    <div class="d-flex gap-2">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="img-container">
+                                <img src="./img/svg/hockey.svg" alt="Hockey">
+                            </div>
+                            <a class=" text-decoration-none" href="#"><span class="text-white text-nowrap">Hockey sobre hielo</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="historial">
+            <div class="historial-container rounded-4 p-3">
+                <div class="d-flex justify-content-evenly">
+                    <div class="historial-btn p-2 d-flex flex-column align-items-center">
+                        <button id="cupon" class="no-stylebtn">
+                            <h2 class="text-white text-nowrap small-text">Tu cupón</h2>
+                        </button>
+                        <span></span>
+                    </div>
+                    <div class="historial-btn p-2 d-flex flex-column align-items-center">
+                        <button id="historial" class="no-stylebtn"> 
+                            <h2 class="text-white small-text">historial</h2>
+                        </button>
+                        <span></span>
+                    </div>
+                    <div id="cupon-vista">
+                        <div class="d-flex flex-column">
+                            
+                        </div>
+                    </div>
+
+                    <div id="hist-vista"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="container text-white">
+        <div class="d-flex flex-column gap-5 mb-3">
+            <div class="d-flex justify-content-between">
+                <div>
+                    <h6>Logo</h6>
+                </div>
+                <div class="d-flex gap-3 justify-content-end">
+                    <img src="img/svg/disc1.svg" alt="">
+                    <img src="img/svg/disc2.svg" alt="saberjugar">
+                </div>
+            </div>
+
+            <div class="d-flex gap-5">
+                <div class="d-flex flex-column">
+                    <p class="smallest-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia unde dicta
+                        quam quidem recusandae officia illum dolor aliquid iste magni, autem illo quod voluptates ex
+                        distinctio perferendis odit <strong><br>amet consectetur adipisicing elit. Hic, odit
+                            odio.</strong></p>
+                    <p>Síguenos en redes Sociales</p>
+                    <div class="d-flex gap-2">
+                        <div class="rounded-circle bg-gradient-red justify-content-center align-items-center p-2"><img
+                                class="" src="img/svg/ig.svg" alt=""></div>
+                        <div class="rounded-circle bg-gradient-red justify-content-center align-items-center p-2"><img
+                                src="img/svg/twitterx.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="d-flex gap-5">
+                    <div class="d-flex flex-column gap-1">
+                        <h6 class="mb-4">Juegos</h6>
+                        <a class="footer-link text-nowrap" href="#">Destacados</a>
+                        <a class="footer-link text-nowrap" href="#">Nuevos Juegos</a>
+                        <a class="footer-link text-nowrap" href="#">Clásicos</a>
+                        <a class="footer-link text-nowrap" href="#">Todos los Juegos</a>
+                        <a class="footer-link text-nowrap" href="#">Deportes</a>
+                    </div>
+                    <div class="d-flex flex-column gap-1">
+                        <h6 class="mb-4">Legales</h6>
+                        <a class="footer-link text-nowrap" href="#">Acerca de nosotros</a>
+                        <a class="footer-link text-nowrap" href="#">Términos y condiciones</a>
+                        <a class="footer-link text-nowrap" href="#">Política de privacidad</a>
+                        <a class="footer-link text-nowrap" href="#">Juego Responsable</a>
+                    </div>
+                    <div class="d-flex flex-column gap-1">
+                        <h6 class="mb-4">Ayuda</h6>
+                        <a class="footer-link text-nowrap" href="#">Chat de Soporte Online</a>
+                        <a class="footer-link text-nowrap" href="#">Preguntas frecuentes</a>
+                        <a class="footer-link text-nowrap" href="#">Reembolsos</a>
+                        <a class="footer-link text-nowrap" href="#">Contacto</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex gap-5 justify-content-between">
+                <p class="small-text text-gray text-nowrap">Casino Fortunato © Todos los derechos reservados, 2024</p>
+                <div class="d-flex justify-content-end gap-1">
+                    <div class="cash-container"><img class="rounded-1 w-100" src="img/paypal.jpg" alt="paypal"></div>
+                    <div class="cash-container"><img class="rounded-1 w-100" src="img/maestro.jpg" alt="maestro"></div>
+                    <div class="cash-container"><img class="rounded-1 w-100" src="img/Discover.jpg" alt="Discover">
+                    </div>
+                    <div class="cash-container"><img class="rounded-1 w-100" src="img/Visa.jpg" alt="Visa"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./js/login.js"></script>
+    <script src="./js/aside.js"></script>
+</body>
+
+</html>
