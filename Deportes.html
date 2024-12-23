@@ -379,7 +379,7 @@
             </div>
         </div>
         <div class="historial">
-            <div class="historial-container rounded-4 p-3">
+            <div class="historial-container d-flex flex-column rounded-4 p-3">
                 <div class="d-flex justify-content-evenly">
                     <div class="historial-btn p-2 d-flex flex-column align-items-center">
                         <button id="cupon" class="no-stylebtn">
@@ -393,17 +393,129 @@
                         </button>
                         <span></span>
                     </div>
+                </div>
+                <div>
                     <div id="cupon-vista">
-                        <div class="d-flex flex-column">
-                            
+                        <div class="centrar d-flex justify-content-center align-items-center">
+                            <div class="hist-inf d-flex flex-column align-items-center">
+                                <h2 class="text-white small-text text-center">No hay selecciones en el boleto de apuesta</h2>
+                                <div class="bg-gradient-red rounded-circle p-1">
+                                    <img src="./img/svg/pinned.svg" alt="pin">
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div id="hist-vista"></div>
+                    <div id="hist-vista">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+        <!-- barra -->
+    <div>
+
+
+    </div>
+
+    <!-- apuestas -->
+    <div class="container juegos-container overflow-x-hidden overflow-y-hidden">
+        <div class="juegos overflow-hidden rounded-4">
+            <div class="titulo d-flex align-items-center justify-content-between p-3">
+                <span class="text-white">España > La liga 2</span>
+                <div>
+                    <img src="./img/svg/fav.svg" alt="favorite">
+                </div>               
+            </div>
+            <div class="inf-game d-flex flex-column gap-3 p-3">
+                <div class="inf-game d-flex gap-2">
+                    <span class="badge text-bg-success">En vivo</span>
+                    <div class="d-flex">
+                        <img src="./img/svg/live.svg" alt="live">
+                        <span class="text-success text-nowrap">45' 1parte</span>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex flex-column">
+                        <h3 class="text-white small-text">Luton Town</h3>
+                        <h3 class="text-white small-text">Everton</h3>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <h3 class="text-white small-text">2</h3>
+                        <h3 class="text-white small-text">2</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uno-x-dos titulo d-flex align-items-center justify-content-center">        
+                    <h2 class="text-white small-text">1x2</h2>
+            </div>
+            <div class="uno-x-dos-info d-flex justify-content-center align-items-center">
+                <div class="d-flex justify-content-around gap-5 p-2">
+                    <div class="d-flex flex-column gap-2">
+                        <h4 class="text-lightblue small-text">1</h4>
+                        <h4 class="text-white small-text">1.07</h4>
+                    </div>
+                    <div class="d-flex flex-column gap-2">
+                        <h4 class="text-lightblue small-text">Empate</h4>
+                        <h4 class="text-white small-text">11</h4>
+                    </div>
+                    <div class="d-flex flex-column gap-2">
+                        <h4 class="text-lightblue small-text">2</h4>
+                        <h4 class="text-white small-text">2.90</h4>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="doble-chance titulo d-flex align-items-center justify-content-center">        
+                    <h2 class="text-white small-text">Doble Oportunidad</h2>
+            </div>
+            <div class="doble-chance-info d-flex justify-content-center align-items-center">
+                <div class="d-flex justify-content-around gap-5 p-2">
+                    <div class="d-flex flex-column gap-2">
+                        <h4 class="text-lightblue small-text text-nowrap">1 o Empate</h4>
+                        <h4 class="text-white small-text">1.07</h4>
+                    </div>
+                    <div class="d-flex flex-column gap-2">
+                        <h4 class="text-lightblue small-text">1 o 2</h4>
+                        <h4 class="text-white small-text">11</h4>
+                    </div>
+                    <div class="d-flex flex-column gap-2">
+                        <h4 class="text-lightblue small-text">2 o Empate</h4>
+                        <h4 class="text-white small-text">2.90</h4>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="total titulo d-flex align-items-center justify-content-center">        
+                    <h2 class="text-white small-text">Total</h2>
+            </div>
+            <div class="total-info d-flex justify-content-center align-items-center">
+                <div class="d-flex justify-content-around gap-5 p-4">
+                    <div class="d-flex flex-column gap-2">
+                        <h4 class="text-lightblue small-text text-nowrap">Más de 3</h4>
+                        <h4 class="text-white small-text">1.07</h4>
+                    </div>
+                    <div class="d-flex flex-column gap-2">
+                        <h4 class="text-lightblue small-text text-nowrap">Menos de 3</h4>
+                        <h4 class="text-white small-text">11</h4>
+                    </div>
+                    <div class="d-flex flex-column gap-2 text-nowrap">
+                        <h4 class="text-lightblue small-text">Más de 3.5</h4>
+                        <h4 class="text-white small-text">2.90</h4>
+                    </div>
+                    <div class="d-flex flex-column gap-2 text-nowrap">
+                        <h4 class="text-lightblue small-text">Menos de 3.5</h4>
+                        <h4 class="text-white small-text">2.90</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 
 
     <footer class="container text-white">
@@ -473,7 +585,7 @@
 
 
     <script src="./js/login.js"></script>
-    <script src="./js/aside.js"></script>
+    <script src="./js/hist.js"></script>
 </body>
 
 </html>
